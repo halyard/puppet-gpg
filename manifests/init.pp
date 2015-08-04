@@ -9,7 +9,7 @@
 #
 class gpg (
 ) {
-  package { ['gnupg', 'gnupg2']: }
+  package { ['gnupg', 'gnupg-halyard']: }
   package { 'gpgtools-halyard':
     provider => 'brewcask'
   }
