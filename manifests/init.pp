@@ -13,6 +13,7 @@ class gpg (
     require => Homebrew::Tap['halyard/formulae']
   }
   package { 'gpgtools-halyard':
-    provider => 'brewcask'
+    provider => 'brewcask',
+    require  => Homebrew::Tap['halyard/casks']
   }
 }
