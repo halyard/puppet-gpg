@@ -9,7 +9,7 @@
 #
 class gpg (
 ) {
-  package { ['gnupg', 'gnupg-halyard']:
+  package { 'gnupg-halyard':
     require => Homebrew::Tap['halyard/formulae']
   }
   package { 'gpgtools-halyard':
