@@ -16,4 +16,8 @@ class gpg (
     provider => 'brewcask',
     require  => Homebrew::Tap['halyard/casks']
   }
+  file { '/usr/local/bin/gpg':
+    ensure  => 'absent',
+    require => Package['gpgtools-halyard']
+  }
 }
