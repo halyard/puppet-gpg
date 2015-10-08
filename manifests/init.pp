@@ -20,4 +20,10 @@ class gpg (
     ensure  => 'absent',
     require => Package['gpgtools-halyard']
   }
+  file { "/Users/${::boxen_user}/.gnupg":
+    ensure  => directory,
+    owner   => $::boxen_user,
+    mode    => 'u+rwX,go-rwx',
+    require => Package['gpgtools-halyard']
+  }
 }
