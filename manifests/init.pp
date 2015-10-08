@@ -16,10 +16,17 @@ class gpg (
     provider => 'brewcask',
     require  => Homebrew::Tap['halyard/casks']
   }
-  file { '/usr/local/bin/gpg':
-    ensure  => 'absent',
+
+  $bad_files = [
+    '/usr/local/bin/gpg',
+    '/Library/LaunchAgents/org.gpgtools.macgpg2.fix.plist',
+    '/Library/LaunchAgents/org.gpgtools.macgpg2.shutdown-gpg-agent.plist'
+  ]
+  file { $bad_files:
+    ensure  => absent,
     require => Package['gpgtools-halyard']
   }
+
   file { "/Users/${::boxen_user}/.gnupg":
     ensure  => directory,
     owner   => $::boxen_user,
