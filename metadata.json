@@ -1,14 +1,22 @@
 {
-  "name": "puppet-gpg",
-  "version": "0.0.1",
-  "author": "akerl",
-  "summary": "Configure GPG utilities",
+  "name": "halyard-gpg",
+  "version": "0.1.0",
+  "author": "Les Aker",
   "license": "MIT",
+  "summary": "Configure gpg via Boxen",
   "source": "https://github.com/halyard/puppet-gpg",
   "project_page": "https://github.com/halyard/puppet-gpg",
   "issues_url": "https://github.com/halyard/puppet-gpg/issues",
   "dependencies": [
+
   ],
   "operatingsystem_support": [
+    {
+      "operatingsystem": "Darwin",
+      "operatingsystemmajrelease": [
+        "14",
+        "15"
+      ]
+    }
   ]
 }
