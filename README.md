@@ -2,6 +2,7 @@ puppet-gpg
 ===========
 
 [![Puppet Forge](https://img.shields.io/puppetforge/v/halyard/gpg.svg)](https://forge.puppetlabs.com/halyard/gpg)
+[![Dependency Status](https://img.shields.io/gemnasium/halyard/puppet-gpg.svg)](https://gemnasium.com/halyard/puppet-gpg)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 [![Build Status](https://img.shields.io/circleci/project/halyard/puppet-gpg.svg)](https://circleci.com/gh/halyard/puppet-gpg)
 
