@@ -30,7 +30,7 @@ class gpg (
   file { "/Users/${::boxen_user}/.gnupg":
     ensure  => directory,
     owner   => $::boxen_user,
-    group   => 'staff'
+    group   => 'staff',
     mode    => 'u+rwX,go-rwx',
     require => Package['gpgtools-halyard']
   }
